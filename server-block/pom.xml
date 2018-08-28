@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.oge.kdm.rtdb</groupId>
+		<artifactId>kdm-rtdb-server</artifactId>
+		<version>4.2.1-SNAPSHOT</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>kdm-rtdb-server-vzdb-block</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	
+	<properties>
+		<name>kdm-rtdb-vzdb-block</name>
+	</properties>
+
+	<dependencies>
+		<!-- Kdm Rtdb -->
+		<dependency>
+			<groupId>cn.oge.kdm.rtdb</groupId>
+			<artifactId>kdm-rtdb-vzdb-adapter</artifactId>
+			<version>0.1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>kdm</id>
+			<url>http://mvn.orientge.cn:2080/content/groups/kdm</url>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>

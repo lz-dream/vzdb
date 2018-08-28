@@ -1,0 +1,11 @@
+<assembly>
+	<fileSets>
+		<fileSet>
+			<directory>${project.build.directory}</directory>
+			<outputDirectory>${docker.dir.run}</outputDirectory>
+			<includes>
+				<include>${project.build.finalName}.jar</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>
