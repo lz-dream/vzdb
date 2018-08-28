@@ -13,6 +13,7 @@
 	
 	<properties>
 		<name>kdm-rtdb-vzdb-block</name>
+		<maven.deploy.skip>true</maven.deploy.skip>
 	</properties>
 
 	<dependencies>
