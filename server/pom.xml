@@ -8,12 +8,13 @@
 		<relativePath />
 	</parent>
 
-	<artifactId>kdm-rtdb-server-vzdb</artifactId>
+	<artifactId>kdm-rtdb-vzdb-server</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	
 	<properties>
 		<name>kdm-rtdb-vzdb</name>
 		<maven.deploy.skip>true</maven.deploy.skip>
+		<maven.install.skip>true</maven.install.skip>
 	</properties>
 
 	<dependencies>
