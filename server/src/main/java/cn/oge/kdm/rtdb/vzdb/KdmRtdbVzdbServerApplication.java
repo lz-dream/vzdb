@@ -8,14 +8,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import cn.oge.kdm.rtdb.autoconfigure.EnableKdmRtdbServer;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
 @EnableSwagger2
 @EnableDiscoveryClient
 @EnableKdmRtdbServer
 @SpringBootApplication
-public class KdmRtdbServerVzdbApplication {
+public class KdmRtdbVzdbServerApplication {
 
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(KdmRtdbServerVzdbApplication.class, args);
+		SpringApplication.run(KdmRtdbVzdbServerApplication.class, args);
 	}
 }

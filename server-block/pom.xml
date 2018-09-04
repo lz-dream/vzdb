@@ -13,6 +13,7 @@
 	
 	<properties>
 		<name>kdm-rtdb-vzdb-block</name>
+		<server.port>8041</server.port>
 		<maven.deploy.skip>true</maven.deploy.skip>
 		<maven.install.skip>true</maven.install.skip>
 	</properties>

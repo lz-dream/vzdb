@@ -13,9 +13,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableDiscoveryClient
 @EnableKdmRtdbServer
 @SpringBootApplication
-public class KdmRtdbServerVzdbApplication {
+public class KdmRtdbVzdbBlockServerApplication {
 
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(KdmRtdbServerVzdbApplication.class, args);
+		SpringApplication.run(KdmRtdbVzdbBlockServerApplication.class, args);
 	}
 }

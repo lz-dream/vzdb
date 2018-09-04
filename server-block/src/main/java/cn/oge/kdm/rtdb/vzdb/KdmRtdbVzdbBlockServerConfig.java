@@ -1,6 +1,7 @@
 package cn.oge.kdm.rtdb.vzdb;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 import cn.oge.kdm.common.utils.beans.BeanUtils;
@@ -11,7 +12,8 @@ import cn.oge.kdm.rtdb.vzdb.adapter.VzdbBlockReadAdapter;
 import cn.oge.kdm.rtdb.vzdb.adapter.VzdbBlockWriteAdapter;
 import cn.oge.kdm.rtdb.vzdb.adapter.VzdbConnectionPool;
 
-public class VzdbBlockConfig {
+@Configuration
+public class KdmRtdbVzdbBlockServerConfig {
 
 	@Bean
 	public VzdbConnectionPool vzdbConnection(RtdbConfig config) {
@@ -19,13 +21,11 @@ public class VzdbBlockConfig {
 	}
 
 	@Bean
-	@Primary
 	public VzdbBlockReadAdapter readService(VzdbConnectionPool pool) {
 		return new VzdbBlockReadAdapter(pool);
 	}
 
 	@Bean
-	@Primary
 	public VzdbBlockWriteAdapter writeService(VzdbConnectionPool pool) {
 		return new VzdbBlockWriteAdapter(pool);
 	}
