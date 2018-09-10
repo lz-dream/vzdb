@@ -26,7 +26,25 @@
 			<groupId>cn.oge.vzdb</groupId>
 			<artifactId>vzdb</artifactId>
 		</dependency>
-	</dependencies>
+		<!-- -->
+		<dependency>
+			<groupId>cn.oge.skdb</groupId>
+			<artifactId>skdbApi</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.thrift</groupId>
+			<artifactId>libthrift</artifactId>
+            <!--<version>0.11.0</version>-->
+			</dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+
+    </dependencies>
 
 	<repositories>
 		<repository>

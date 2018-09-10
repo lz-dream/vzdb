@@ -6,6 +6,9 @@ server.port: '@server.port@'
 ### Application Config
 ### ===========================================================
 # 必须引用
+#spring.profiles:
+#  include: def_full
+#  active: reg_eureka, alias_redis
+  
 spring.profiles:
-  include: def_full
-  active: reg_eureka, alias_redis
+  active: reg_none, alias_none

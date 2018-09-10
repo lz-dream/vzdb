@@ -29,6 +29,10 @@ public class VzdbConnectionPool {
 			int rcode = -9999;
 			try {
 				rdb = new Hdb();
+				System.out.println(config.getHost());
+            	System.out.println(config.getPort());
+            	System.out.println(config.getUsername());
+            	System.out.println(config.getPassword());
 				rcode = rdb.connect(config.getHost(), config.getPort(), config.getUsername(), config.getPassword());
 				log.info("vzdb连接成功");
 			} catch (Throwable t) {
